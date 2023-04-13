@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0;
+    background-color: salmon;
+    font-family: cursive;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+img{
+    width:70px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    top: 50px;
+    z-index: 2;
+
+
+}
+.clock{
+    position: relative;
+    background-color: lightgray;
+    width:350px;
+    height: 350px;
+    border-radius: 50%;
+    border:5px solid darkgray;
+    box-shadow:10px 5px 5px rgb(0,0,0,0.7); 
+}
+.number div{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color:blue;
+    text-shadow: 1px 1px 2px rgb(0,0,0,0.7);
+}
+.twelve{
+    left: 50%;
+    top:6px;
+    transform: translate(-50%);
+    
+}
+.three{
+    right: 6px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.six{
+    left: 50%;
+    bottom:6px;
+    transform: translate(-50%);
+}
+.nine{
+    top: 50%;
+    left:6px;
+    transform: translateY(-50%);
+}
+.arrow{
+    display: flex;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+
+    align-items: center;
+}
+.arrow::before{
+    content:"";
+    background-color: green;
+    width: 20px;
+    height:20px;
+    border-radius:10px ;
+    box-shadow:1px 2px 5px rgb(0,0,0,0.7); 
+    z-index: 4;
+}
+.arrow div{
+    background-color: white;
+    width:7px;
+    position: absolute;
+    height: 130px;
+    bottom:50%;
+    transform-origin: bottom center;/* ti rotate from origin*/
+    z-index: 3;
+    border-radius:50% 50% 0 0;
+    box-shadow:1px 2px 5px rgb(0,0,0,0.3); 
+}
+.arrow .hour{
+    background-color:red;
+      transform: rotate(30deg);
+      height: 100px;
+      
+    
+    }
+.arrow .sec{
+        background-color: gold;     
+        transform: rotate(200deg);
+        }
